@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>🎓 Student</h2>
+
+        <a href="/dashboard" class="active">🏠 Dashboard</a>
+        <a href="/marks">📚 Marks</a>
+        <a href="/attendance">📅 Attendance</a>
+        <a href="/performance">📊 Performance</a>
+        <a href="/">🚪 Logout</a>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header>
+            <h1>Student Dashboard</h1>
+            <p>Welcome back, Student 👋</p>
+        </header>
+
+        <section class="student-card">
+            <div>
+                <h2>Mahi Sharma</h2>
+                <p>B.Tech Software Engineering</p>
+                <p>Semester: 6th</p>
+            </div>
+
+            <div class="profile-icon">
+                👤
+            </div>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>📊 Overall Marks</h3>
+                <h2>78%</h2>
+                <p>Good Performance</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>📅 Attendance</h3>
+                <h2>85%</h2>
+                <p>Excellent</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>🏆 Rank</h3>
+                <h2>12</h2>
+                <p>Out of 80 Students</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>📚 Subjects</h3>
+                <h2>6</h2>
+                <p>This Semester</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <h2>Subject Performance</h2>
+
+            <div class="subject">
+                <span>Operating System</span>
+                <strong>88%</strong>
+                <div class="progress">
+                    <div style="width:88%"></div>
+                </div>
+            </div>
+
+            <div class="subject">
+                <span>Data Mining</span>
+                <strong>75%</strong>
+                <div class="progress">
+                    <div style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="subject">
+                <span>Web Development</span>
+                <strong>70%</strong>
+                <div class="progress">
+                    <div style="width:70%"></div>
+                </div>
+            </div>
+
+            <div class="subject">
+                <span>Software Engineering</span>
+                <strong>82%</strong>
+                <div class="progress">
+                    <div style="width:82%"></div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

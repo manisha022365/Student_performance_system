@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+/* Login */
+
+.login-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #5568d9;
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 20px;
+    color: #667eea;
+}
+
+/* Layout */
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: #202938;
+    color: white;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 13px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #667eea;
+}
+
+/* Main */
+
+.main-content {
+    margin-left: 240px;
+    padding: 35px;
+    width: calc(100% - 240px);
+}
+
+.main-content header {
+    margin-bottom: 25px;
+}
+
+.student-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile-icon {
+    font-size: 50px;
+}
+
+/* Stats */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h2 {
+    margin: 12px 0;
+}
+
+/* Sections */
+
+.dashboard-section,
+.analysis-section {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.subject {
+    margin-top: 20px;
+}
+
+.subject strong {
+    float: right;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background: #667eea;
+}
+
+/* Table */
+
+.table-container {
+    background: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #667eea;
+    color: white;
+}
+
+.total-card {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Attendance */
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.attendance-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.attendance-card h2 {
+    margin: 15px 0;
+}
+
+.good {
+    display: inline-block;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.warning {
+    display: inline-block;
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.alert-box {
+    margin-top: 25px;
+    padding: 18px;
+    background: #fff3cd;
+    border-radius: 8px;
+}
+
+/* Performance */
+
+.performance-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.performance-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.performance-box h1 {
+    margin-top: 15px;
+}
+
+.recommendation {
+    padding: 20px;
+    margin-top: 15px;
+    background: #f4f6f9;
+    border-radius: 10px;
+}
+
+.good-box {
+    border-left: 5px solid green;
+}
+
+.warning-box {
+    border-left: 5px solid orange;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .attendance-grid,
+    .performance-summary {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+        padding: 20px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}

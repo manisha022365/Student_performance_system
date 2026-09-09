@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>🎓 Student</h2>
+
+        <a href="/dashboard">🏠 Dashboard</a>
+        <a href="/marks">📚 Marks</a>
+        <a href="/attendance">📅 Attendance</a>
+        <a href="/performance" class="active">📊 Performance</a>
+        <a href="/">🚪 Logout</a>
+
+    </aside>
+
+    <main class="main-content">
+
+        <h1>📊 Performance Analysis</h1>
+        <p>Detailed analysis of your academic performance</p>
+
+        <div class="performance-summary">
+
+            <div class="performance-box">
+                <h3>Overall Percentage</h3>
+                <h1>78%</h1>
+            </div>
+
+            <div class="performance-box">
+                <h3>Performance Level</h3>
+                <h1>🟢 Good</h1>
+            </div>
+
+        </div>
+
+        <div class="analysis-section">
+
+            <h2>💪 Strong Subjects</h2>
+
+            <div class="recommendation good-box">
+                <strong>Operating System - 88%</strong>
+                <p>Excellent performance. Keep practicing to maintain your score.</p>
+            </div>
+
+            <div class="recommendation good-box">
+                <strong>Software Engineering - 82%</strong>
+                <p>Good performance. You are doing well in this subject.</p>
+            </div>
+
+        </div>
+
+        <div class="analysis-section">
+
+            <h2>⚠️ Subjects That Need Improvement</h2>
+
+            <div class="recommendation warning-box">
+                <strong>Web Development - 70%</strong>
+                <p>Practice coding regularly and focus on practical assignments.</p>
+            </div>
+
+            <div class="recommendation warning-box">
+                <strong>Data Mining - 75%</strong>
+                <p>Revise important concepts and solve more numerical problems.</p>
+            </div>
+
+        </div>
+
+        <div class="analysis-section">
+
+            <h2>💡 Overall Recommendation</h2>
+
+            <div class="recommendation">
+                Your overall performance is good. Focus more on your weaker
+                subjects and maintain regular attendance.
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

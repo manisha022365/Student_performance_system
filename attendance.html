@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>🎓 Student</h2>
+
+        <a href="/dashboard">🏠 Dashboard</a>
+        <a href="/marks">📚 Marks</a>
+        <a href="/attendance" class="active">📅 Attendance</a>
+        <a href="/performance">📊 Performance</a>
+        <a href="/">🚪 Logout</a>
+
+    </aside>
+
+    <main class="main-content">
+
+        <h1>📅 Attendance Analysis</h1>
+        <p>Subject-wise attendance</p>
+
+        <div class="attendance-grid">
+
+            <div class="attendance-card">
+                <h3>Operating System</h3>
+                <h2>90%</h2>
+                <div class="progress">
+                    <div style="width:90%"></div>
+                </div>
+                <span class="good">Good Attendance</span>
+            </div>
+
+            <div class="attendance-card">
+                <h3>Data Mining</h3>
+                <h2>85%</h2>
+                <div class="progress">
+                    <div style="width:85%"></div>
+                </div>
+                <span class="good">Good Attendance</span>
+            </div>
+
+            <div class="attendance-card">
+                <h3>Web Development</h3>
+                <h2>72%</h2>
+                <div class="progress">
+                    <div style="width:72%"></div>
+                </div>
+                <span class="warning">Needs Attention</span>
+            </div>
+
+            <div class="attendance-card">
+                <h3>Software Engineering</h3>
+                <h2>88%</h2>
+                <div class="progress">
+                    <div style="width:88%"></div>
+                </div>
+                <span class="good">Good Attendance</span>
+            </div>
+
+        </div>
+
+        <div class="alert-box">
+            ⚠️ Maintain attendance above 75% to avoid shortage.
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
